@@ -5,7 +5,7 @@ function addItem() {
         var li = document.createElement("li");
         li.appendChild(text);
         if (inputValue==="") {
-            alert("Wpisz zadanie!");
+            alert("Na pewno masz coś do zrobienia :)");
         }else {
             document.getElementById("list").appendChild(li);
         }
@@ -13,7 +13,7 @@ function addItem() {
         
         //tworzymy <span> dla każdego elementu <li>
         var span = document.createElement("span");
-        var spanText = document.createTextNode("Usuń");
+        var spanText = document.createTextNode("x");
         span.className = "remove";
         span.appendChild(spanText);
         li.appendChild(span);
